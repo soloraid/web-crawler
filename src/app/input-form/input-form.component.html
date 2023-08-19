@@ -1,0 +1,11 @@
+<div class="input-form">
+    <form (ngSubmit)="onSubmit()">
+        <label for="urlInput">Enter URL:</label>
+        <input type="text" id="urlInput" [(ngModel)]="url" name="url" required>
+
+        <label for="depthInput">Depth:</label>
+        <input type="number" id="depthInput" [(ngModel)]="depth" name="depth" required>
+
+        <button type="submit">Start Crawling</button>
+    </form>
+</div>

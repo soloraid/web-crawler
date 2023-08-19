@@ -1,0 +1,3 @@
+<app-input-form (startCrawling)="loading = true;crawling($event)"></app-input-form>
+<app-visualization *ngIf="links.length > 0" [links]="links"></app-visualization>
+<div *ngIf="loading">Loading . . .</div>
